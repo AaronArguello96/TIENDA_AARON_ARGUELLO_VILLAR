@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="header"></head>
+    <body>
+	<div th:replace="navbar"></div>
+        <!-- Product section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5 align-items-center" th:object="${producto}">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" th:src="${producto.imagen}" alt="..." /></div>
+                    <div class="col-md-6">
+                        <!--<div class="small mb-1" th:text="${producto.id}">SKU: BST-498</div>-->
+                        <h1 class="display-5 fw-bolder" th:text="${producto.nombre}">Shop item template</h1>
+                        <div class="fs-5 mb-5">
+                            <!--<span class="text-decoration-line-through" th:text="${producto.precio}">$45.00</span>-->
+                            <h2 th:text="${producto.precio}+'€'">$40.00</h2>
+                        </div>
+                        <div>
+	                        <span class="lead"><b>ID: </b></span ><span class="lead" th:text="${producto.id}"></span> <br/>
+	                        <span class="lead"><b>Nombre: </b></span ><span class="lead" th:text="${producto.nombre}"></span> <br/>
+	                        <span class="lead"><b>Descripción: </b></span ><span class="lead" th:text="${producto.descripcion}"></span> <br/>
+	                        <span class="lead"><b>Stock: </b></span ><span class="lead" th:text="${producto.stock}"></span> <br/>
+	                        <!--<span class="lead"><b>Fecha alta: </b></span ><span class="lead" th:text="${producto.fechaAlta}"></span> <br/>
+	                        <span class="lead"><b>Fecha baja: </b></span ><span class="lead" th:text="${producto.fechaBaja}"></span> <br/>-->
+	                        <span class="lead"><b>Impuesto: </b></span ><span class="lead" th:text="${producto.impuesto}+'%'"></span> <br/>
+                        </div>
+						<br/>
+                       
+                        <div class="d-flex" th:if="${session.usuario.idrol == 3 || session.usuario.idrol==0}">
+                            <!--<input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />-->
+									<a th:href="@{/carritoController/addCarrito/}+${producto.id}"><input type="button" name="producto"
+											value="Añadir"></input></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+	<footer th:replace="footer"></footer>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<h1>Carrito</h1>
+	<table class="table table-striped">
+		<tr>
+			<!--<th>Id</th>-->
+			<!--<th>Id Pedido</th>-->
+			<th>Id Producto</th>
+			<th>Nombre Producto</th>
+			<th>Precio Unidad</th>
+			<th>Unidades</th>
+			<th>Impuesto</th>
+			<th>Total</th>
+			<th></th>
+		</tr>
+		<tr th:each="detalles_pedido:${session.carrito}">
+			<!--<td th:text="${detalles_pedido.id}">Id</td>-->
+			<!--<td th:text="${detalles_pedido.id_pedido}">Id Pedido</td>-->
+			<td th:text="${detalles_pedido.idProducto}">Id Producto</td>
+			<td th:text="${detalles_pedido.nombre_pedido}">Nombre Pedido</td>
+			<td th:text="${detalles_pedido.precio_unidad}">Precio Unidad</td>
+			<td th:text="${detalles_pedido.unidades}">Unidades</td>
+			<td th:text="${detalles_pedido.impuesto}">Impuesto</td>
+			<td th:text="${detalles_pedido.total}">Total</td>			
+			<td>		
+				<a th:href="@{/carritoController/deleteCarrito/}+${detalles_pedido.idProducto}" class="btn btn-primary my-2">Eliminar</a>
+			</td >
+		</tr>
+		<table>
+		<div class="col-lg-1 col-md-8 mx-auto">
+			<h2 th:text="'Total: '+${session.total}"></h2>
+		</div>
+		<div class="col-lg-1 col-md-8 mx-auto" th:if="${session.total} != 0">		
+				<a th:href="@{/carritoController/comprar}" class="btn btn-primary my-2">Comprar</a>
+		</div>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

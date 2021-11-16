@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Lista de roles</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+		</tr>
+		<tr th:each="rol:${lista}">
+			<td th:text="${rol.id}">Id</td>
+			<td th:text="${rol.rol}">Rol</td>
+		</tr>
+		<table>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

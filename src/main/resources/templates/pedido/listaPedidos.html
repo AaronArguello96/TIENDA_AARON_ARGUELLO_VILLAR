@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Pedidos realizados</h1>
+	<table class="table table-striped">
+		<tr>
+			<th th:if="${session.usuario.idrol == 2 || session.usuario.idrol == 1}">ID Pedido</th >
+			<th th:if="${session.usuario.idrol == 2 || session.usuario.idrol == 1}">ID Usuario</th >
+			<th>Metodo Pago</th>
+			<th>Estado</th>
+			<th>Número factura</th>
+			<th>Fecha</th>
+			<th>Total</th>
+			<th></th>
+			<th></th>
+			<th></th>
+
+		</tr>
+		<tr th:each="pedido:${lista}">
+			<td th:if="${session.usuario.idrol == 2 || session.usuario.idrol == 1}" th:text="${pedido.id}">Id</td>
+			<td th:if="${session.usuario.idrol == 2 || session.usuario.idrol == 1}" th:text="${pedido.idUsuario}">ID Usuario</td>
+			<td th:text="${pedido.metodoPago}">Metodo Pago</td>
+			<td th:text="${pedido.estado}">Estado</td>
+			<td th:text="${pedido.num_factura}">Número factura</td>
+			<td th:text="${pedido.fecha}">Número factura</td>
+			<td th:text="${pedido.total}+'€'">Total</td>
+			<!-- Si el usuario es un cliente-->	
+			<div th:if="${session.usuario.idrol == 3}">
+				<td> <a th:href="@{/pedido/detallesPedido/}+${pedido.id}" class="btn btn-primary my-2">Detalles</a></td>
+				<td> <a th:href="@{/pedido/cambiarEstadoSCancelado/}+${pedido.id}" class="btn btn-primary my-2">Solicitar cancelación</a></td>
+				<td> <a th:href="@{/pedido/descargarFactura/}+${pedido.id}" class="btn btn-primary my-2">Descargar Factura</a></td>
+			</div>
+			<!-- Si el usuario es un empleado-->	
+			<div th:if="${session.usuario.idrol == 2}">
+				<td> <a th:href="@{/pedido/cambiarEstadoEnviado/}+${pedido.id}" class="btn btn-primary my-2">Cambiar estado</a></td>
+			</div>
+			<!-- Si el usuario es el admin-->	
+			<div th:if="${session.usuario.idrol == 1}">
+				<td> <a th:href="@{/pedido/cambiarEstadoCancelado/}+${pedido.id}" class="btn btn-primary my-2">Procesar cancelación</a></td>
+			</div>
+		</tr>
+		<table>
+		<p th:text="${mensaje}" style="color: red;"></p>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

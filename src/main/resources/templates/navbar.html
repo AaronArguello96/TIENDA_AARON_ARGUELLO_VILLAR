@@ -1,0 +1,51 @@
+<div class="p-3 bg-dark text-white" th:fragment="navbar">
+	<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+		<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+			<img class="mb-4" src="/img/logo.png" alt="" width="50" height="50"></img>
+		</a>
+		<!--Usuario Admin-->
+		<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" th:if="${session.usuario.idrol == 1}">
+			<li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+			<li><a th:href="@{/usuario/listarXrolCliente}" class="nav-link px-2 text-white">Clientes</a></li>
+			<li><a th:href="@{/usuario/listarXrolEmpleado}" class="nav-link px-2 text-white">Empleados</a></li>
+			<li><a th:href="@{/producto/listar}" class="nav-link px-2 text-white">Productos</a></li>
+			<li><a th:href="@{/categoria/listar}" class="nav-link px-2 text-white">Categorías</a></li>
+			<li><a th:href="@{/pedido/listaPedidosTotal}" class="nav-link px-2 text-white">Pedidos</a></li>
+			<!--<li><a th:href="@{/configuracion/listar}" class="nav-link px-2 text-white">Configuración</a></li>-->
+		</ul>
+		
+		<!--Usuario Empleado-->
+		<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" th:if="${session.usuario.idrol == 2}">
+			<li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+			<li><a th:href="@{/usuario/listarXrolCliente}" class="nav-link px-2 text-white">Clientes</a></li>
+			<li><a th:href="@{/producto/listar}" class="nav-link px-2 text-white">Productos</a></li>
+			<li><a th:href="@{/categoria/listar}" class="nav-link px-2 text-white">Categorías</a></li>
+			<li><a th:href="@{/pedido/listaPedidosTotal}" class="nav-link px-2 text-white">Pedidos</a></li>
+			<li><a th:href="@{/usuario/perfil/}+${session.usuario.id}" class="nav-link px-2 text-white">Mi perfil</a></li>
+		</ul>
+		
+		<!--Usuario Cliente-->
+		<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" th:if="${session.usuario.idrol == 3}">
+			<li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+			<li><a th:href="@{/usuario/perfil/}+${session.usuario.id}" class="nav-link px-2 text-white">Mi perfil</a></li>
+			<li><a th:href="@{/pedido/listaPedidos}" class="nav-link px-2 text-white">Pedidos</a></li>
+		</ul>
+		
+		<p>Bienvenid@</p><b><p class="nav-link px-2 text-white" th:text="${session.usuario.email}"></b>
+		<!--<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+			<input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+		</form>-->
+		<!--El usuario no esta logueado-->
+		<div class="text-end" th:if="${session.usuario.id==0}">
+			<a th:href="@{/carritoController/carrito}"><button type="button"
+					class="btn btn-outline-light me-2">Carrito</button></a>
+			<a th:href="@{/usuario/formLogin}"><button type="button" class="btn btn-warning">Login</button></a>
+			<a th:href="@{/usuario/formAlta}"><button type="button" class="btn btn-warning">Darse de alta</button></a>			
+		</div>
+		<!--El usuario esta logueado-->
+		<div class="text-end" th:if="${session.usuario.id!=0}">
+			<a th:href="@{/carritoController/carrito}" th:if="${session.usuario.idrol==3}"><button type="button" class="btn btn-outline-light me-2">Carrito</button></a>
+			<a th:href="@{/usuario/logout}"><button type="button" class="btn btn-warning">Cerrar sesión</button></a>			
+		</div>
+	</div>
+</div>

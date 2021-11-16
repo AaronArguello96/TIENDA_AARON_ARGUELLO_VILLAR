@@ -1,0 +1,198 @@
+[2021-11-16 10:11:13] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:11:15] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:11:15] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:11:15] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:11:45] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:12:47] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:12:50] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:12:53] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:12:53] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:13:16] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:25] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:13:25] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:27] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:13:27] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:30] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:13:30] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:34] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:13:34] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:40] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:46] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:13:46] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:13:46] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:14:05] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:14:11] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:14:11] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:14:11] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:14:17] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:16:26] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:16:26] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:16:26] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:16:32] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:25:06] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:26:33] [ INFO ] [ProductoService:52] Se ha creado un nuevo producto
+[2021-11-16 10:26:36] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:26:52] [ INFO ] [ProductoService:58] Se ha eliminado un producto
+[2021-11-16 10:27:04] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:27:49] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:27:49] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:27:49] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:27:57] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:28:06] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:28:06] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:28:06] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:28:17] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:31:04] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:32:11] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:32:19] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:36:11] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:37:12] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:38:49] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:39:32] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:39:36] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:39:48] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:39:52] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:39:52] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:40:08] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:40:11] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:40:11] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:40:11] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:40:19] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:41:02] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:41:11] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:43:17] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:44:00] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:44:24] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:44:26] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:44:26] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:44:26] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:44:32] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:44:34] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:44:34] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:44:34] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:44:52] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:44:59] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:45:00] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:45:00] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:45:02] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:45:02] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:45:04] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:45:04] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:47:43] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:47:47] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:47:47] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:47:47] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:47:56] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:48:15] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:48:15] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:48:15] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:48:23] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:48:48] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:48:50] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:48:50] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:48:51] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 10:48:51] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:48:55] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:49:05] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:49:05] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:49:05] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:49:11] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:54:15] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:55:02] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:55:07] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:55:07] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:55:07] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:55:14] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:55:35] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:55:43] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:55:47] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:55:47] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:55:47] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:55:54] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:56:32] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:56:36] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:56:36] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 10:56:36] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:56:44] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:57:29] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:57:33] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:57:33] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:57:42] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:59:00] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 10:59:01] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 10:59:01] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 10:59:15] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:00:08] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:00:08] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:00:08] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:00:19] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:00:49] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:00:49] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:00:49] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:00:54] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:00:57] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:00:57] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:00:57] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:01:04] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:01:12] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:01:12] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:01:12] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:01:19] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:06] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 11:02:08] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:08] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:02:08] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:02:15] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:20] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:20] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:02:20] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:02:25] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:29] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:02:29] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:30] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:02:30] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:32] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:02:32] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:34] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:02:34] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:35] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:02:35] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:38] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:42] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:43] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:02:43] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:02:43] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:02:50] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:04:46] [ INFO ] [ProductoService:41] Creación e insercción de productos en la BD
+[2021-11-16 11:04:48] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:04:48] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:04:48] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:04:54] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:00] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:00] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:05:00] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:05:05] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:07] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:05:07] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:08] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:05:08] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:10] [ INFO ] [ProductoService:79] Se ha editado un producto
+[2021-11-16 11:05:10] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:14] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:18] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:18] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:05:18] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:05:23] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:27] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:27] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:05:27] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:05:32] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:05:37] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:22:11] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:22:28] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:22:28] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:22:28] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima
+[2021-11-16 11:22:35] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:25:19] [ INFO ] [MainController:36] Comienza la ejecución de la aplicación
+[2021-11-16 11:25:19] [ INFO ] [MainController:43] Se crea el carrito vacío
+[2021-11-16 11:25:19] [ INFO ] [MainController:47] Si el usuario no está logueado se crea una sesión anónima

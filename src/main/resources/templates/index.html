@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head th:replace="header"></head>
+
+<body>
+	<div th:replace="navbar"></div>
+	<section class="py-5 text-center container">
+		<div class="">
+			<div class="col-lg-4 col-md-6 mx-auto">
+				<!--<h1>Bienvenid@</h1><h1 class="fw-light" th:text="${session.usuario.email}" ></h1>-->
+				<h3 class="fw-light">Filtros</h3 >
+				<a th:href="@{/producto/filtroPrecio}" class="btn btn-primary my-2">Filtrar por precio</a>
+				<a th:href="@{/producto/filtroCategoria}" class="btn btn-secondary my-2">Filtrar por categoría</a>
+			</div>
+		</div>
+	</section>
+	<div class="album py-5 bg-light">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+				<div class="col" th:each="producto:${lista}">
+					<div class="card shadow-sm">
+						<a th:href="@{/producto/detalles/}+${producto.id}"><img th:src="${producto.imagen}" width="100%"
+								height="225"></img></a>
+						<div class="card-body">
+							<h5 th:text="${producto.nombre}"></h5>
+							<b><span th:text="${producto.precio}"></span><span>€</span></b>
+							<!--<span>ID: </span><span class="card-text" th:text="${producto.id}"></span><br />
+							<span>Nombre: </span><span class="card-text" th:text="${producto.nombre}"></span><br />
+							<span>Descripción: </span><span class="card-text"
+								th:text="${producto.descripcion}"></span><br />
+							<span>Precio: </span><span class="card-text" th:text="${producto.precio}"></span><br />
+							<span>Stock: </span><span class="card-text" th:text="${producto.stock}"></span><br />
+							<span>Fecha alta: </span><span class="card-text"
+								th:text="${producto.fecha_alta}"></span><br />
+							<span>Fecha baja: </span><span class="card-text"
+								th:text="${producto.fecha_baja}"></span><br />
+							<span>Impuesto: </span><span class="card-text" th:text="${producto.impuesto}"></span><br />-->
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="btn-group" th:if="${session.usuario.idrol} == 1">
+									<a th:href="@{/producto/editar/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Editar</button></a>
+									<a th:href="@{/producto/eliminar/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Eliminar</button></a>
+									<a th:href="@{/producto/detalles/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Detalles</button></a>
+								</div>
+								<div class="btn-group" th:if="${session.usuario.idrol} == 3">
+									<a th:href="@{/carritoController/addCarrito/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Añadir</button></a>
+									<a th:href="@{/producto/detalles/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Detalles</button></a>
+								</div>
+								<!--El usuario no esta logueado-->
+								<div class="btn-group" th:if="${session.usuario.id} == 0">
+									<a th:href="@{/carritoController/addCarrito/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Añadir</button></a>
+									<a th:href="@{/producto/detalles/}+${producto.id}"><button type="button"
+											class="btn btn-sm btn-outline-secondary">Detalles</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer th:replace="footer"></footer>
+</body>
+
+</html>

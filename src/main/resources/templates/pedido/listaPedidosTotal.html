@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Total pedidos realizados</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>ID Pedido</th >
+			<!--<th>ID Usuario</th >-->
+			<th>Metodo Pago</th>
+			<th>Estado</th>
+			<th>Número factura</th>
+			<th>Fecha</th>
+			<th>Total</th>
+			<th></th>
+			<th></th>
+			<th></th>
+
+		</tr>
+		<tr th:each="pedido:${lista}">
+			<td th:text="${pedido.id}">Id</td>
+			<!--<td th:text="${pedido.idUsuario}">ID Usuario</td>-->
+			<td th:text="${pedido.metodoPago}">Metodo Pago</td>
+			<td th:text="${pedido.estado}">Estado</td>
+			<td th:text="${pedido.num_factura}">Número factura</td>
+			<td th:text="${pedido.fecha}">Número factura</td>
+			<td th:text="${pedido.total}+'€'">Total</td>
+			<!-- Si el usuario es un empleado-->	
+			<div th:if="${session.usuario.idrol == 2}">
+				<td> <a th:href="@{/pedido/cambiarEstadoEnviado/}+${pedido.id}" class="btn btn-primary my-2">Cambiar estado</a></td>
+			</div>
+			<!-- Si el usuario es el admin-->	
+			<div th:if="${session.usuario.idrol == 1}">
+				<td> <a th:href="@{/pedido/cambiarEstadoCancelado/}+${pedido.id}" class="btn btn-primary my-2">Procesar cancelación</a></td>
+			</div>
+			<td></td>
+			<td></td>
+		</tr>
+		<table>
+		<p th:text="${mensaje}" style="color: red;"></p>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Lista de empleados</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Clave</th>
+			<th>Email</th>
+			<th>Primer apellido</th>
+			<th>Segundo apellido</th>
+			<th>Dirección</th>
+			<th>Provincia</th>
+			<th>Localidad</th>
+			<th>Teléfono</th>
+			<th>DNI</th>
+			<th></th>
+			<th></th>
+		</tr>
+		<tr th:each="usuario:${lista}">
+			<td th:text="${usuario.id}">Id</td>
+			<td th:text="${usuario.nombre}">Nombre</td>
+			<td th:text="${usuario.clave}">Clave</td>
+			<td th:text="${usuario.email}">Email</td>
+			<td th:text="${usuario.apellido1}">Primer apellido</td>
+			<td th:text="${usuario.apellido2}">Segundo apellido</td>
+			<td th:text="${usuario.direccion}">Dirección</td>
+			<td th:text="${usuario.provincia}">Provincia</td>
+			<td th:text="${usuario.localidad}">Localidad</td>
+			<td th:text="${usuario.telefono}">Teléfono</td>
+			<td th:text="${usuario.dni}">DNI</td>
+			<td> <a th:href="@{/usuario/eliminarEmpleado/}+${usuario.id}" class="btn btn-primary my-2">Eliminar</a></td>
+			<td> <a th:href="@{/usuario/editarEmpleado/}+${usuario.id}" class="btn btn-primary my-2">Editar</a></td >
+		</tr>
+	</table>
+		<div class="col-lg-1 col-md-8 mx-auto" th:if="${session.usuario.idrol == 1}">
+			<a th:href="@{/usuario/crearEmpleado}" class="btn btn-primary my-2">Añadir empleado</a>
+		</div>
+	<footer th:include="footer"></footer>
+</body>
+</html>

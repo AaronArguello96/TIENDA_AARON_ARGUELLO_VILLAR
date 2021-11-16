@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Detalles del pedido</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>Id Producto</th>
+			<th>Nombre Producto</th>
+			<th>Precio Unidad</th>
+			<th>Unidades</th>
+			<th>Impuesto</th>
+			<th>Total</th>
+		</tr>
+		<tr th:each="detalles_pedido:${lista}">
+			<!--<td th:text="${detalles_pedido.id}">Id</td>-->
+			<!--<td th:text="${detalles_pedido.id_pedido}">Id Pedido</td>-->
+			<td th:text="${detalles_pedido.idProducto}">Id Producto</td>
+			<td th:text="${detalles_pedido.nombre_pedido}">Nombre Pedido</td>
+			<td th:text="${detalles_pedido.precio_unidad}+'€'">Precio Unidad</td>
+			<td th:text="${detalles_pedido.unidades}">Unidades</td>
+			<td th:text="${detalles_pedido.impuesto}+'%'">Impuesto</td>
+			<td th:text="${detalles_pedido.total}+'€'">Total</td>			
+		</tr>
+		<table>
+		<div class="col-lg-1 col-md-8 mx-auto">
+			<a th:href="@{/pedido/listaPedidos}" class="btn btn-primary my-2">Volver</a>
+		</div>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

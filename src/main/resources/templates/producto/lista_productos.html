@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Lista de productos</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<th>Precio</th>
+			<th>Stock</th>
+			<!--<th>Fecha Alta</th>
+			<th>Fecha Baja</th>-->
+			<th>Impuesto</th>
+			<th></th>
+			<th></th>
+			<th></th>
+			
+
+		</tr>
+		<tr th:each="producto:${lista}">
+			<td th:text="${producto.id}">Id</td>
+			<td th:text="${producto.nombre}">Nombre</td>
+			<td th:text="${producto.descripcion}">Descripcion</td>
+			<td th:text="${producto.precio}+'€'">Precio</td>
+			<td th:text="${producto.stock}">Stock</td>
+			<!--<td th:text="${producto.fechaAlta}">Fecha Alta</td>
+			<td th:text="${producto.fechaBaja}">Fecha Baja</td>-->
+			<td th:text="${producto.impuesto}+'%'">Impuesto</td>
+					
+			<td th:if="${session.usuario.idrol == 1}"> <a th:href="@{/producto/eliminar/}+${producto.id}" class="btn btn-primary my-2">Eliminar</a></td >
+			<td> <a th:href="@{/producto/editar/}+${producto.id}" class="btn btn-primary my-2">Editar</a></td >
+			<td> <a th:href="@{/producto/baja/}+${producto.id}" class="btn btn-primary my-2">Dar de baja</a></td >
+		</tr>
+		<table>
+		<div class="col-lg-1 col-md-8 mx-auto">
+			<a th:href="@{/producto/crear}" class="btn btn-primary my-2">Añadir producto</a>
+			<a th:href="@{/producto/exportar}" class="btn btn-primary my-2">Exportar productos</a>	
+			<!--<a th:if="${session.usuario.idrol == 1}" th:href="@{/producto/importar}" class="btn btn-primary my-2">Importar productos</a>-->		
+		</div>
+
+	<footer th:replace="footer"></footer>
+</body>
+</html>

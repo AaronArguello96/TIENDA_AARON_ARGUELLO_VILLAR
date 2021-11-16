@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head th:replace="header"></head>
+<body>
+	<div th:replace="navbar"></div>
+	<br/>
+	<h1>Lista de categorías</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<!--<th></th>
+			<th></th>-->
+		</tr>
+		<tr th:each="categoria:${lista}">
+			<td th:text="${categoria.id}">Id</td>
+			<td th:text="${categoria.nombre}">Nombre</td>
+			<td th:text="${categoria.descripcion}">Descripcion</td>		
+			<!--<td> <a th:href="@{/categoria/eliminar/}+${categoria.id}" class="btn btn-primary my-2">Eliminar</a></td>
+			<td> <a th:href="@{/categoria/editar/}+${categoria.id}" class="btn btn-primary my-2">Editar</a></td>-->
+		</tr>
+		<table>
+		<div class="col-lg-1 col-md-8 mx-auto">
+			<a th:href="@{/categoria/crear}" class="btn btn-primary my-2">Añadir categoría</a>
+		</div>
+	<footer th:replace="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head th:replace="header"></head>
+<body class="text-center">
+	
+	<main class="form-signin">
+	  <form th:action="@{/producto/agregar}" th:object="${producto}" method="post">
+	  <a href="/"><img class="mb-4" src="../img/logo.png" alt="" width="100" height="100"></a>
+	    <h1 class="h3 mb-3 fw-normal">Añadir un producto</h1>
+	    <div class="form-floating">
+	      <input type="text" class="form-control" id="floatingInput" required="required" name="id_categoria">
+	      <label for="floatingInput">Id Categoría</label>
+	    </div>
+	    <div class="form-floating">
+	      <input type="text" class="form-control" id="floatingInput" required="required" name="nombre">
+	      <label for="floatingInput">Nombre</label>
+	    </div>
+	    <div class="form-floating">
+	      <input  type="text" class="form-control" id="floatingInput" required="required" name="descripcion">
+	      <label for="floatingInput">Descripcion</label>
+	    </div>
+	    <div class="form-floating">
+	      <input type="text" class="form-control" id="floatingInput" required="required" name="precio">
+	      <label for="floatingInput">Precio</label>
+	    </div>
+	    <div class="form-floating">
+	      <input type="text" class="form-control" id="floatingInput" required="required" name="stock">
+	      <label for="floatingInput">Stock</label>
+	    </div>
+	    <!--
+	    <div class="form-floating">
+	      <input th:field="*{fecha_alta}" type="text" class="form-control" id="floatingInput" required="required" name="fecha_alta">
+	      <label for="floatingInput">Fecha alta</label>
+	    </div>
+	    <div class="form-floating">
+	      <input th:field="*{fecha_baja}" type="text" class="form-control" id="floatingInput" required="required" name="fecha_baja">
+	      <label for="floatingInput">Fecha baja</label>
+	    </div>
+	    -->
+	    <div class="form-floating">
+	      <input type="text" class="form-control" id="floatingInput" required="required" name="impuesto">
+	      <label for="floatingInput">Impuesto</label>
+	    </div>
+	    <div class="form-floating">
+	      <input type="file" class="form-control" id="floatingInput" required="required" name="imagen">
+	      <label for="floatingInput">Imagen</label>
+	    </div>
+	    
+	    <button class="w-100 btn btn-lg btn-primary" type="submit">Guardar</button>
+	    <p class="mt-5 mb-3 text-muted">&copy; Tienda Online - Noviembre 2021</p>
+	  </form>
+	</main>
+</body >
+</html>

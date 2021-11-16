@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head th:replace="header"></head>
+<body class="text-center">
+	<main class="form-signin">
+	  <form th:action="@{/usuario/editar/submit}" th:object="${usuario}" method="post">
+	    <a href="/"><img class="mb-4" src="/img/logo.png" alt="" width="100" height="100"></a>
+	    <h1 class="h3 mb-3 fw-normal">Editar un cliente</h1>
+	    
+         <div class="row g-3">
+           <div class="col-sm-6">
+             <label for="firstName" class="form-label">Nombre</label>
+             <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" name="nombre" required th:field="*{nombre}">
+             <div class="invalid-feedback">
+             </div>
+         </div>
+         
+	     <div class="col-sm-6">
+              <label for="lastName" class="form-label">Primer apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Primer apellido" value="" name="apellido1" required th:field="*{apellido1}">
+              <div class="invalid-feedback">
+              </div>
+        </div>
+        
+		<div class="col-sm-6">
+              <label for="lastName" class="form-label">Segundo apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Segundo apellido" value="" name="apellido2" required th:field="*{apellido2}">
+              <div class="invalid-feedback">
+              </div>
+        </div>
+        
+         <div class="col-sm-6">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="email" placeholder="correo@correo.com" name="email" th:field="*{email}">
+              <div class="invalid-feedback">
+                Por favor, introduce un correo válido.
+              </div>
+         </div>
+         <div class="col-sm-6">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="direccion" placeholder="Dirección" required name="direccion" th:field="*{direccion}"> 
+              <div class="invalid-feedback">
+                Por favor, introduce una dirección válida.
+              </div>
+         </div>
+         <div class="col-sm-6">
+              <label for="address" class="form-label">Teléfono</label>
+              <input type="text" class="form-control" id="telefono" placeholder="Teléfono" required name="telefono" th:field="*{telefono}">
+              <div class="invalid-feedback">
+                Por favor, introduce un número de teléfono válido.
+              </div>
+        </div>
+            
+        <div class="col-sm-6">
+              <label for="address" class="form-label">Dni</label>
+              <input type="text" class="form-control" id="dni" placeholder="Dni" required name ="dni" th:field="*{dni}">
+              <div class="invalid-feedback">
+                Por favor, introduce un DNI válido.
+              </div>
+        </div>
+        
+        <div class="col-sm-3">
+              <label for="provincia" class="form-label">Provincia</label>
+              <select class="form-select" id="provincia" required name="provincia" th:field="*{provincia}">
+                <option value="">Provincia</option>
+				    <option value="Álava/Araba">Álava/Araba</option>
+				    <option value="Albacete">Albacete</option>
+				    <option value="Alicante">Alicante</option>
+				    <option value="Almería">Almería</option>
+				    <option value="Asturias">Asturias</option>
+				    <option value="Ávila">Ávila</option>
+				    <option value="Badajoz">Badajoz</option>
+				    <option value="Baleares">Baleares</option>
+				    <option value="Barcelona">Barcelona</option>
+				    <option value="Burgos">Burgos</option>
+				    <option value="Cáceres">Cáceres</option>
+				    <option value="Cádiz">Cádiz</option>
+				    <option value="Cantabria">Cantabria</option>
+				    <option value="Castellón">Castellón</option>
+				    <option value="Ceuta">Ceuta</option>
+				    <option value="Ciudad Real">Ciudad Real</option>
+				    <option value="Córdoba">Córdoba</option>
+				    <option value="Cuenca">Cuenca</option>
+				    <option value="Gerona/Girona">Gerona/Girona</option>
+				    <option value="Granada">Granada</option>
+				    <option value="Guadalajara">Guadalajara</option>
+				    <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+				    <option value="Huelva">Huelva</option>
+				    <option value="Huesca">Huesca</option>
+				    <option value="Jaén">Jaén</option>
+				    <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+				    <option value="La Rioja">La Rioja</option>
+				    <option value="Las Palmas">Las Palmas</option>
+				    <option value="León">León</option>
+				    <option value="Lérida/Lleida">Lérida/Lleida</option>
+				    <option value="Lugo">Lugo</option>
+				    <option value="Madrid">Madrid</option>
+				    <option value="Málaga">Málaga</option>
+				    <option value="Melilla">Melilla</option>
+				    <option value="Murcia">Murcia</option>
+				    <option value="Navarra">Navarra</option>
+				    <option value="Orense/Ourense">Orense/Ourense</option>
+				    <option value="Palencia">Palencia</option>
+				    <option value="Pontevedra">Pontevedra</option>
+				    <option value="Salamanca">Salamanca</option>
+				    <option value="Segovia">Segovia</option>
+				    <option value="Sevilla">Sevilla</option>
+				    <option value="Soria">Soria</option>
+				    <option value="Tarragona">Tarragona</option>
+				    <option value="Tenerife">Tenerife</option>
+				    <option value="Teruel">Teruel</option>
+				    <option value="Toledo">Toledo</option>
+				    <option value="Valencia">Valencia</option>
+				    <option value="Valladolid">Valladolid</option>
+				    <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+				    <option value="Zamora">Zamora</option>
+				    <option value="Zaragoza">Zaragoza</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, introduzca una provincia válida.
+              </div>
+        </div>
+        <div class="col-sm-3">
+              <label for="localidad" class="form-label">Localidad</label>
+              <select class="form-select" id="localidad" required name="localidad" th:field="*{localidad}">
+                <option value="">Localidad</option>
+                <option value="Zamora">Zamora</option   >
+                <option value="Melgar de Tera">Melgar de Tera</option >
+                <option value="Benavente">Benavente</option >      
+              </select>
+              <div class="invalid-feedback">
+                Por favor, introduzca una localidad válida.
+              </div>
+        </div>
+        
+	    <input type="hidden" id="id" name="id" th:field="*{id}"/>
+	    <input type="hidden" id="idrol" name="idrol" th:field="*{idrol}"/>
+        <input type="hidden" id="clave" name="clave" th:field="*{clave}"/>   
+           
+	    <button class="w-100 btn btn-lg btn-primary" type="submit">Editar</button>
+	    <p class="mt-5 mb-3 text-muted">&copy; Tienda Online - Noviembre 2021</p>
+	  </form>
+	  <p th:text="${mensaje}" style="color: red;"></p>
+	</main>
+</body >
+</html>
